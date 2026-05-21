@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --card: #111118;
+}
+
+body {
+  @apply antialiased text-white;
+  background: var(--bg);
+  background-image: radial-gradient(ellipse 70% 50% at 50% -15%, rgba(99, 102, 241, 0.18), transparent);
+}
+
+.glass {
+  @apply border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl;
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-indigo-300 via-violet-300 to-cyan-300 bg-clip-text text-transparent;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-white/10;
+}
