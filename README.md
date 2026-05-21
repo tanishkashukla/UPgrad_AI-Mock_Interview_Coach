@@ -34,22 +34,22 @@ flowchart TD
     end
 
     %% Connections
-    Candidate <-->|Interactive Chat| UI
-    UI <-->|JSON REST API| Orchestrator
-    Orchestrator <-->|Session State Persistence| DB
+    Candidate <-->|"Interactive Chat"| UI
+    UI <-->|"JSON REST API"| Orchestrator
+    Orchestrator <-->|"Session State Persistence"| DB
 
     %% Orchestration Loop Flow
-    Orchestrator -->|1. Input: Role, Seniority, Type| Strategist
-    Strategist -->|Output: Competencies, Difficulty, Strategy JSON| Orchestrator
+    Orchestrator -->|"1. Input: Role, Seniority, Type"| Strategist
+    Strategist -->|"Output: Competencies, Difficulty, Strategy JSON"| Orchestrator
     
-    Orchestrator -->|2. Inputs: Q/A context + Evaluator Signal| Interviewer
-    Interviewer -->|Output: Contextual Plain-Text Question| Orchestrator
+    Orchestrator -->|"2. Inputs: Q/A context + Evaluator Signal"| Interviewer
+    Interviewer -->|"Output: Contextual Plain-Text Question"| Orchestrator
     
-    Orchestrator -->|3. Inputs: Question + Answer Pair| Evaluator
-    Evaluator -->|Output: Scores & Signal (advance/probe/simplify)| Orchestrator
+    Orchestrator -->|"3. Inputs: Question + Answer Pair"| Evaluator
+    Evaluator -->|"Output: Scores & Signal (advance/probe/simplify)"| Orchestrator
 
-    Orchestrator -->|4. Input: Complete session history (5-7 turns)| Coach
-    Coach -->|Output: Professional Markdown Feedback Report| Orchestrator
+    Orchestrator -->|"4. Input: Complete session history (5-7 turns)"| Coach
+    Coach -->|"Output: Professional Markdown Feedback Report"| Orchestrator
 ```
 
 ### The Multi-Agent System
