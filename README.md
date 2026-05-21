@@ -10,6 +10,8 @@ InterviewPilot AI is a production-grade, multi-agent mock interview coaching pla
 
 InterviewPilot AI organizes agent logic into four distinct components that coordinate via an orchestrator, relying on a signal-driven system to guide the dialogue naturally.
 
+![Architecture Diagram](docs/architecture_diagram.png)
+
 ```mermaid
 flowchart TD
     %% Styling
