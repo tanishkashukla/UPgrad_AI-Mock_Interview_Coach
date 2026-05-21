@@ -1,4 +1,4 @@
-# 🚀 InterviewPilot AI
+#  InterviewPilot AI
 
 **Practice smarter. Interview better. Master the loop.**
 
@@ -6,7 +6,7 @@ InterviewPilot AI is a production-grade, multi-agent mock interview coaching pla
 
 ---
 
-## 🗺️ System Architecture
+##  System Architecture
 
 InterviewPilot AI organizes agent logic into four distinct components that coordinate via an orchestrator, relying on a signal-driven system to guide the dialogue naturally.
 
@@ -72,7 +72,7 @@ Instead of blinding chaining LLM calls, the orchestrator utilizes explicit, stru
 
 ---
 
-## 🛠️ Quick Start & Setup
+##  Quick Start & Setup
 
 The project supports both direct local deployment (recommended for development) and Docker containers.
 
@@ -136,7 +136,7 @@ The application supports a zero-cost **Mock Mode** by default. This enables imme
 
 ---
 
-## 💎 Premium Design Decisions & Trade-Offs
+##  Premium Design Decisions & Trade-Offs
 
 ### 1. Robust Loop Guards (Anti-Loop Protections)
 *   **The Problem**: In signal-based loops, if a candidate gives consecutive short responses to follow-up questions, the evaluator generates repeating `"probe"` or `"simplify"` signals, trapping the user in an infinite loop where they are repeatedly asked the exact same follow-up text.
@@ -153,11 +153,11 @@ The application supports a zero-cost **Mock Mode** by default. This enables imme
 
 ---
 
-## 📝 Example Interview Transcripts
+##  Example Interview Transcripts
 
 These real-world transcript logs demonstrate how the system handles different candidate performance tiers in Mock Mode.
 
-### 🟢 1. Strong Candidate (Senior Software Engineer)
+###  1. Strong Candidate (Senior Software Engineer)
 
 The candidate demonstrates structured reasoning, concrete metrics, and clear project ownership.
 
@@ -182,7 +182,7 @@ Scores: Communication: 9.0, Technical Depth: 8.5, Structure: 8.5, Relevance: 9.0
 
 ---
 
-### 🔴 2. Weak Candidate (Product Manager)
+###  2. Weak Candidate (Product Manager)
 
 The candidate relies heavily on buzzwords, lacks quantitative metrics, and struggles to clarify personal contributions.
 
@@ -212,7 +212,7 @@ Scores: Communication: 4.5, Technical Depth: 3.0, Structure: 3.5
 
 ---
 
-### 🟡 3. Tricky / Edge Case (Data Analyst)
+###  3. Tricky / Edge Case (Data Analyst)
 
 The candidate handles gaps in knowledge gracefully, demonstrating honesty while recovering later in the session.
 
